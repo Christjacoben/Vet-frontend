@@ -1,0 +1,624 @@
+.user-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.Style {
+  margin-top: 5.6rem;
+  width: 15rem;
+}
+.buttom-style {
+  transform: scaleX(-1);
+  margin-top: 6.6%;
+  width: 15rem;
+  float: right;
+}
+.header-user ul {
+  display: flex;
+  justify-content: space-around;
+}
+.header-user {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.user-header {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  z-index: 101;
+}
+.user-header p {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.user-header img {
+  position: absolute;
+  margin-top: 1px;
+  margin-right: 60px;
+  width: 60px;
+  height: 60px;
+}
+.user-icons {
+  margin-top: 4px;
+}
+.appointment-form {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 3rem;
+  right: 0;
+  left: 0;
+  z-index: 50;
+  pointer-events: auto;
+}
+.child-user-con {
+  display: flex;
+
+  flex-direction: column;
+  align-items: flex-start;
+  width: 40rem;
+  height: 34rem;
+  padding: 30px;
+  margin-top: 3rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 15px;
+  z-index: 100;
+}
+.title {
+  margin-top: -15px;
+  margin-bottom: 10px;
+  margin-left: 17rem;
+}
+.appoint-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: orange;
+}
+.child-user-con input {
+  width: 100%;
+  padding: 10px;
+}
+.items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.items input {
+  width: 25rem;
+  text-align: center;
+  font-style: italic;
+  border-radius: 10px;
+  border: 1px solid #d9dad7;
+}
+.items label {
+  width: 10rem;
+  margin-right: 10px;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  color: orange;
+}
+.items select {
+  width: 26.5rem;
+  padding: 10px;
+  border-radius: 10px;
+  font-style: italic;
+  border: 1px solid #d9dad7;
+}
+.items option {
+  text-align: center;
+  margin: 20px;
+}
+.btn-submit {
+  margin-top: 9px;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  width: 5rem;
+  margin-left: 33rem;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  cursor: pointer;
+}
+.appointment-main-status {
+  position: absolute;
+  top: 6rem;
+  left: 20rem;
+  margin-left: 3rem;
+  max-height: 400px;
+  overflow-y: auto;
+  width: 50rem;
+  border-radius: 20px;
+  padding: 10px;
+  border: none;
+  margin-top: 80px;
+  background-color: white;
+}
+.appointment-main-status::-webkit-scrollbar {
+  width: 8px;
+}
+.appointment-main-status::-webkit-scrollbar-thumb {
+  background-color: #ff9a3c;
+  border-radius: 4px;
+}
+.appointment-con-status {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.appoint-cards-status {
+  margin-top: 1rem;
+  width: 30rem;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.list-service-main {
+  position: absolute;
+  border-radius: 50px;
+  top: 10rem;
+  left: 8rem;
+  width: 40rem;
+  z-index: 30;
+}
+
+.appointment-user-card {
+  border: 1px solid #ccc;
+  padding: 30px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.appointment-user-card button {
+  background-color: #ffc60b;
+  padding: 5px;
+  width: 5rem;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-left: 36.5rem;
+}
+.status-done {
+  position: absolute;
+  margin-top: -60px;
+  left: 40rem;
+  font-weight: bold;
+  font-style: italic;
+
+  background-color: orange;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.status-accepted {
+  position: absolute;
+  margin-top: -60px;
+  left: 40rem;
+  font-weight: bold;
+  font-style: italic;
+
+  background-color: green;
+  color: white;
+  padding: 6px;
+  border-radius: 10px;
+}
+
+.status-rejected {
+  position: absolute;
+  margin-top: -60px;
+  left: 40rem;
+  font-weight: bold;
+  font-style: italic;
+  background-color: red;
+  color: white;
+  padding: 9px;
+  border-radius: 10px;
+}
+
+.status-pending {
+  position: absolute;
+  margin-top: -60px;
+  left: 40rem;
+  font-weight: bold;
+  font-style: italic;
+  background-color: grey;
+  color: white;
+  padding: 8px;
+  border-radius: 10px;
+}
+.user-chat-main {
+  position: absolute;
+  top: 20rem;
+  width: 25rem;
+  height: 20rem;
+  left: 50rem;
+  background-color: red;
+}
+.user-chat {
+  position: absolute;
+  top: 17rem;
+}
+.user-chat input {
+  padding: 10px;
+  width: 18rem;
+  margin-left: 3px;
+}
+.user-chat button {
+  padding: 10px;
+  margin-left: 4px;
+}
+.user-chat-container {
+  background-color: #ff9a3c;
+  position: absolute;
+  width: 30rem;
+  top: 9rem;
+  left: 62rem;
+
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.user-chat-close {
+  padding: 10px;
+  margin-left: 27rem;
+}
+
+.appointment-user-card table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: -1rem;
+}
+
+.appointment-user-card table th,
+.appointment-user-card table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.appointment-user-card table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.appointment-user-card table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.appointment-user-card table tr:hover {
+  background-color: #e9e9e9;
+}
+
+.appointment-user-card table td:first-child {
+  font-weight: bold;
+  width: 150px;
+}
+@media only screen and (min-width: 1200px) {
+  .user-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .Style {
+    margin-top: 5.6rem;
+    width: 15rem;
+  }
+  .buttom-style {
+    transform: scaleX(-1);
+    margin-top: 6.6%;
+    width: 15rem;
+    float: right;
+  }
+  .header-user ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .header-user {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+  .user-header {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    z-index: 101;
+  }
+  .user-header p {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .user-header img {
+    position: absolute;
+    margin-top: 1px;
+    margin-right: 60px;
+    width: 60px;
+    height: 60px;
+  }
+  .user-icons {
+    margin-top: 4px;
+  }
+  .appointment-form {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 3rem;
+    right: 0;
+    left: 0;
+    z-index: 50;
+    pointer-events: auto;
+  }
+  .child-user-con {
+    display: flex;
+
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40rem;
+    height: 34rem;
+    padding: 30px;
+    margin-top: 3rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 15px;
+    z-index: 100;
+  }
+  .title {
+    margin-top: -15px;
+    margin-bottom: 10px;
+    margin-left: 17rem;
+  }
+  .appoint-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: orange;
+  }
+  .child-user-con input {
+    width: 100%;
+    padding: 10px;
+  }
+  .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .items input {
+    width: 25rem;
+    text-align: center;
+    font-style: italic;
+    border-radius: 10px;
+    border: 1px solid #d9dad7;
+  }
+  .items label {
+    width: 10rem;
+    margin-right: 10px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    color: orange;
+  }
+  .items select {
+    width: 26.5rem;
+    padding: 10px;
+    border-radius: 10px;
+    font-style: italic;
+    border: 1px solid #d9dad7;
+  }
+  .items option {
+    text-align: center;
+    margin: 20px;
+  }
+  .btn-submit {
+    margin-top: 9px;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    width: 5rem;
+    margin-left: 33rem;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+      rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    cursor: pointer;
+  }
+  .appointment-main-status {
+    position: absolute;
+    top: 6rem;
+    left: 20rem;
+    margin-left: 3rem;
+    max-height: 400px;
+    overflow-y: auto;
+    width: 50rem;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    margin-top: 80px;
+    background-color: white;
+  }
+  .appointment-main-status::-webkit-scrollbar {
+    width: 8px;
+  }
+  .appointment-main-status::-webkit-scrollbar-thumb {
+    background-color: #ff9a3c;
+    border-radius: 4px;
+  }
+  .appointment-con-status {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .appoint-cards-status {
+    margin-top: 1rem;
+    width: 30rem;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+  .list-service-main {
+    position: absolute;
+    border-radius: 50px;
+    top: 7rem;
+    left: 8rem;
+    width: 40rem;
+    z-index: 30;
+  }
+
+  .appointment-user-card {
+    border: 1px solid #ccc;
+    padding: 30px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+      rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  }
+  .appointment-user-card button {
+    background-color: #ffc60b;
+    padding: 5px;
+    width: 5rem;
+    margin-top: 15px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-left: 36.5rem;
+  }
+  .status-done {
+    position: absolute;
+    margin-top: -60px;
+    left: 40rem;
+    font-weight: bold;
+    font-style: italic;
+
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .status-accepted {
+    position: absolute;
+    margin-top: -60px;
+    left: 40rem;
+    font-weight: bold;
+    font-style: italic;
+
+    background-color: green;
+    color: white;
+    padding: 6px;
+    border-radius: 10px;
+  }
+
+  .status-rejected {
+    position: absolute;
+    margin-top: -60px;
+    left: 40rem;
+    font-weight: bold;
+    font-style: italic;
+    background-color: red;
+    color: white;
+    padding: 9px;
+    border-radius: 10px;
+  }
+
+  .status-pending {
+    position: absolute;
+    margin-top: -60px;
+    left: 40rem;
+    font-weight: bold;
+    font-style: italic;
+    background-color: grey;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+  }
+  .user-chat-main {
+    position: absolute;
+    top: 20rem;
+    width: 25rem;
+    height: 20rem;
+    left: 50rem;
+    background-color: red;
+  }
+  .user-chat {
+    position: absolute;
+    top: 17rem;
+  }
+  .user-chat input {
+    padding: 10px;
+    width: 18rem;
+    margin-left: 3px;
+  }
+  .user-chat button {
+    padding: 10px;
+    margin-left: 4px;
+  }
+  .user-chat-container {
+    background-color: #ff9a3c;
+    position: absolute;
+    width: 30rem;
+    top: 9rem;
+    left: 50rem;
+
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .user-chat-close {
+    padding: 10px;
+    margin-left: 27rem;
+  }
+
+  .appointment-user-card table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: -1rem;
+  }
+
+  .appointment-user-card table th,
+  .appointment-user-card table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  .appointment-user-card table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+
+  .appointment-user-card table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  .appointment-user-card table tr:hover {
+    background-color: #e9e9e9;
+  }
+
+  .appointment-user-card table td:first-child {
+    font-weight: bold;
+    width: 150px;
+  }
+}

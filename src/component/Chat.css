@@ -1,0 +1,98 @@
+/* Chat.css */
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: 500px; /* Adjust as needed */
+  border: none;
+  border-radius: 16px;
+  background-color: #ff9a3c;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.messages {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+}
+
+.my-message,
+.other-message {
+  display: flex;
+  margin: 5px 0;
+}
+
+.my-message {
+  justify-content: flex-end;
+}
+
+.other-message {
+  justify-content: flex-start;
+}
+
+.my-message p,
+.other-message p {
+  max-width: 60%;
+  padding: 10px;
+  border-radius: 15px;
+  word-wrap: break-word;
+  font-size: 14px;
+}
+
+.my-message p {
+  background-color: #d1f1ff;
+  color: #000000;
+  border-top-right-radius: 0;
+}
+
+.other-message p {
+  background-color: #f1f1f1;
+  color: #000000;
+  border-top-left-radius: 0;
+}
+
+.input-container {
+  display: flex;
+  padding: 10px;
+  border-top: none;
+  background-color: #ffffff;
+}
+
+.input-container input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.input-container button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #ff9a3c;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.input-container button:hover {
+  background-color: #0056b3;
+}
+
+.messages::-webkit-scrollbar {
+  width: 8px;
+}
+
+.messages::-webkit-scrollbar-thumb {
+  background-color: #ff9a3c;
+  border-radius: 4px;
+}
+
+.messages::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}

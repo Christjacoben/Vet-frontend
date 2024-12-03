@@ -1,0 +1,77 @@
+.ser-main-com {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  height: 36.5rem;
+  border-radius: 50px;
+}
+
+.ser-left {
+  position: absolute;
+  width: 40rem;
+  height: 15rem;
+}
+.ser-left P {
+  margin-top: 7rem;
+  margin-left: 10rem;
+  font-size: 40px;
+  font-weight: bold;
+  color: orange;
+}
+
+.ser-right {
+  position: absolute;
+  left: 40rem;
+  width: 35rem;
+  height: 15rem;
+}
+.ser-right img {
+  width: 15rem;
+  margin-top: 1px;
+  margin-left: 10rem;
+}
+.ser-buttom {
+  position: absolute;
+  display: flex;
+  top: 15rem;
+  left: 1px;
+  width: 74.8rem;
+  height: 21.6rem;
+
+  border-radius: 49px;
+}
+.ser-buttom-cards {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  width: 10rem;
+}
+.ser-buttom-top {
+  position: absolute;
+  display: flex;
+  top: 8px;
+  left: 14rem;
+  height: 9rem;
+}
+.ser-buttom-buttom {
+  top: 11rem;
+  position: absolute;
+  display: flex;
+
+  left: 8rem;
+  height: 9rem;
+}
+.ser-buttom-cards {
+  margin-left: 1rem;
+  border-radius: 15px;
+}
+.ser-buttom-cards img {
+  margin-top: 1px;
+  width: 10rem;
+  height: 8.7rem;
+  border-radius: 10px;
+}
+.ser-buttom-cards p {
+  margin-top: -1px;
+  margin-left: 16.7px;
+  font-size: 25px;
+  font-weight: bold;
+  color: orange;
+}
