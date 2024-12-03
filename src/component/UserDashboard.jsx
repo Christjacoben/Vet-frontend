@@ -142,9 +142,9 @@ function UserDashboard() {
     setUserChatClose((prev) => !prev);
   };
 
-  const filteredAppointments = appointments.filter(
-    (appointment) => appointment.userId === userId
-  );
+  const filteredAppointments = Array.isArray(appointments)
+    ? appointments.filter((appointment) => appointment.userId === userId)
+    : [];
 
   const renderAcceptedAppointments = () => {
     return filteredAppointments.map((appointment) => {
