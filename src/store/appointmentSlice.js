@@ -3,11 +3,15 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 export const fetchAppointment = createAsyncThunk(
   "appointments/fetchAppointments",
   async () => {
+     const token = sessionStorage.getItem("token");
     const response = await fetch(
       "http://localhost:5000/api/appointments",
       {
         method: "GET",
         credentials: "include",
+          headers: {
+        Authorization: `Bearer ${token}`,
+      },
       }
     );
 
