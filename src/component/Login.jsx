@@ -37,6 +37,8 @@ function Login() {
             position: "top-center",
           });
         } else {
+            sessionStorage.setItem("authToken", data.token);
+
           dispatch(login(data.user));
           toast.success("Login successful!", {
             position: "top-center",
