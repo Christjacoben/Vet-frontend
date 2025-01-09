@@ -554,16 +554,16 @@
   width: 40rem;
   margin-left: 11rem;
   padding: 50px;
- 
 }
-.report-card{
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+.report-card {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   padding: 30px;
-  margin:10px;
+  margin: 10px;
   width: 38rem;
   border-radius: 10px;
 }
-.report-card h3{
+.report-card h3 {
   color: #ff9a3c;
 }
 .pet-report-info-main h5 {
@@ -643,10 +643,10 @@
 }
 
 .pet-report-info-cards {
-  width: 100%; 
-  max-width: 1000px; 
-  margin: 16px auto; 
-  border: 1px solid #ddd; 
+  width: 100%;
+  max-width: 1000px;
+  margin: 16px auto;
+  border: 1px solid #ddd;
   border-radius: 4px;
 }
 
@@ -663,26 +663,26 @@
   font-weight: bold;
   text-align: left;
   color: orange;
-  width: 30%; 
+  width: 30%;
 }
 
 .pet-report-info-cards td:last-child {
   text-align: left;
-  color: #333; 
+  color: #333;
 }
 
 .pet-report-info-cards tr {
-  border-bottom: 1px solid #ddd; 
+  border-bottom: 1px solid #ddd;
 }
 
 .pet-report-info-cards tr:last-child {
-  border-bottom: none; /
+  border-bottom: none;
 }
 .pet-report-owner-cards {
-  width: 100%; 
-  max-width: 1000px; 
-  margin: 16px auto; 
-  border: 1px solid #ddd; 
+  width: 100%;
+  max-width: 1000px;
+  margin: 16px auto;
+  border: 1px solid #ddd;
   border-radius: 4px;
 }
 
@@ -699,26 +699,26 @@
   font-weight: bold;
   text-align: left;
   color: orange;
-  width: 30%; 
+  width: 30%;
 }
 
 .pet-report-owner-cards td:last-child {
   text-align: left;
-  color: #333; 
+  color: #333;
 }
 
 .pet-report-owner-cards tr {
-  border-bottom: 1px solid #ddd; 
+  border-bottom: 1px solid #ddd;
 }
 
 .pet-report-owner-cards tr:last-child {
-  border-bottom: none; /
+  border-bottom: none;
 }
 .pet-report-veteri-cards {
-  width: 100%; 
-  max-width: 1000px; 
-  margin: 16px auto; 
-  border: 1px solid #ddd; 
+  width: 100%;
+  max-width: 1000px;
+  margin: 16px auto;
+  border: 1px solid #ddd;
   border-radius: 4px;
 }
 
@@ -735,26 +735,26 @@
   font-weight: bold;
   text-align: left;
   color: orange;
-  width: 30%; 
+  width: 30%;
 }
 
 .pet-report-veteri-cards td:last-child {
   text-align: left;
-  color: #333; 
+  color: #333;
 }
 
 .pet-report-veteri-cards tr {
-  border-bottom: 1px solid #ddd; 
+  border-bottom: 1px solid #ddd;
 }
 
 .pet-report-veteri-cards tr:last-child {
-  border-bottom: none; /
+  border-bottom: none;
 }
 .pet-report-parasites-cards {
-  width: 100%; 
-  max-width: 1000px; 
-  margin: 16px auto; 
-  border: 1px solid #ddd; 
+  width: 100%;
+  max-width: 1000px;
+  margin: 16px auto;
+  border: 1px solid #ddd;
   border-radius: 4px;
 }
 
@@ -771,26 +771,26 @@
   font-weight: bold;
   text-align: left;
   color: orange;
-  width: 30%; 
+  width: 30%;
 }
 
 .pet-report-parasites-cards td:last-child {
   text-align: left;
-  color: #333; 
+  color: #333;
 }
 
 .pet-report-parasites-cards tr {
-  border-bottom: 1px solid #ddd; 
+  border-bottom: 1px solid #ddd;
 }
 
 .pet-report-parasites-cards tr:last-child {
-  border-bottom: none; 
+  border-bottom: none;
 }
 .pet-report-rabies-cards {
-  width: 100%; 
-  max-width: 1000px; 
-  margin: 16px auto; 
-  border: 1px solid #ddd; 
+  width: 100%;
+  max-width: 1000px;
+  margin: 16px auto;
+  border: 1px solid #ddd;
   border-radius: 4px;
 }
 
@@ -807,26 +807,26 @@
   font-weight: bold;
   text-align: left;
   color: orange;
-  width: 30%; 
+  width: 30%;
 }
 
 .pet-report-rabies-cards td:last-child {
   text-align: left;
-  color: #333; 
+  color: #333;
 }
 
 .pet-report-rabies-cards tr {
-  border-bottom: 1px solid #ddd; 
+  border-bottom: 1px solid #ddd;
 }
 
 .pet-report-rabies-cards tr:last-child {
-  border-bottom: none; 
+  border-bottom: none;
 }
 .pet-report-multivac-cards {
-  width: 100%; 
-  max-width: 1000px; 
-  margin: 16px auto; 
-  border: 1px solid #ddd; 
+  width: 100%;
+  max-width: 1000px;
+  margin: 16px auto;
+  border: 1px solid #ddd;
   border-radius: 4px;
 }
 
@@ -843,26 +843,26 @@
   font-weight: bold;
   text-align: left;
   color: orange;
-  width: 30%; 
+  width: 30%;
 }
 
 .pet-report-multivac-cards td:last-child {
   text-align: left;
-  color: #333; 
+  color: #333;
 }
 
 .pet-report-multivac-cards tr {
-  border-bottom: 1px solid #ddd; 
+  border-bottom: 1px solid #ddd;
 }
 
 .pet-report-multivac-cards tr:last-child {
-  border-bottom: none; 
+  border-bottom: none;
 }
 .pet-report-service-cards {
-  width: 100%; 
-  max-width: 1000px; 
-  margin: 16px auto; 
-  border: 1px solid #ddd; 
+  width: 100%;
+  max-width: 1000px;
+  margin: 16px auto;
+  border: 1px solid #ddd;
   border-radius: 4px;
 }
 
@@ -879,22 +879,22 @@
   font-weight: bold;
   text-align: left;
   color: orange;
-  width: 30%; 
+  width: 30%;
 }
 
 .pet-report-service-cards td:last-child {
   text-align: left;
-  color: #333; 
+  color: #333;
 }
 
 .pet-report-service-cards tr {
-  border-bottom: 1px solid #ddd; 
+  border-bottom: 1px solid #ddd;
 }
 
 .pet-report-service-cards tr:last-child {
-  border-bottom: none; 
+  border-bottom: none;
 }
-@media only screen and (min-width: 1200px ) {
+@media only screen and (min-width: 1200px) {
   .admin-header {
     display: flex;
     position: absolute;
@@ -913,7 +913,7 @@
     height: 18px;
     padding: 22px;
   }
-  
+
   .child-con {
     margin-top: 0;
     position: absolute;
@@ -924,7 +924,7 @@
     justify-content: space-between;
     z-index: 2;
   }
-  
+
   .left-con {
     margin-top: 21px;
     width: 20rem;
@@ -959,7 +959,7 @@
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
   }
-  
+
   .dash-category p {
     font-size: 20px;
     padding-left: 10px;
@@ -974,7 +974,7 @@
     background-color: #f7f7f7;
     color: #ff9a3c;
   }
-  
+
   .dash-category:hover .icons {
     color: #ff9a3c;
   }
@@ -987,7 +987,7 @@
     justify-content: space-around;
     margin-top: 5%;
   }
-  
+
   .appointment-category {
     margin-top: -10px;
     padding: 10px;
@@ -999,7 +999,7 @@
     font-weight: bold;
     font-size: 16px;
   }
-  
+
   .calendar {
     display: flex;
     flex-direction: column;
@@ -1010,11 +1010,11 @@
   .calendar p {
     font-weight: bold;
   }
-  
+
   .react-calendar {
     width: 80%;
     padding: 10px;
-  
+
     font-family: Arial, Helvetica, sans-serif;
     line-height: 2em;
     text-decoration: none;
@@ -1022,13 +1022,13 @@
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
       rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   }
-  
+
   .react-calendar__tile {
     padding: 25px;
     border: none;
     background-color: white;
   }
-  
+
   .react-calendar__tile--active {
     background-color: #007bff;
     color: white;
@@ -1036,7 +1036,7 @@
   .react-calendar__tile--now {
     background-color: #ffecd2;
   }
-  
+
   .react-calendar__tile:hover {
     background-color: #f7f7f7;
     cursor: pointer;
@@ -1048,7 +1048,7 @@
     border-bottom: none;
     padding: 5px 0;
   }
-  
+
   .react-calendar__navigation button {
     background-color: #ffffff;
     color: #333;
@@ -1059,13 +1059,13 @@
     cursor: pointer;
     font-weight: bold;
   }
-  
+
   .react-calendar__navigation button:hover {
     background-color: #ff9a3c;
     color: white;
     border-color: #ff9a3c;
   }
-  
+
   .react-calendar__navigation__label {
     background-color: transparent;
     color: #333;
@@ -1074,7 +1074,7 @@
     border: none;
     margin: 0 5px;
   }
-  
+
   .react-calendar__navigation {
     display: flex;
     justify-content: center;
@@ -1083,7 +1083,7 @@
   }
   .appointment-req {
     position: absolute;
-  
+
     margin-top: 4%;
     margin-left: 8%;
     width: 60rem;
@@ -1106,7 +1106,7 @@
   .appointment-card {
     border: 1px solid #ccc;
     padding: 30px;
-  
+
     margin-bottom: 10px;
     border-radius: 8px;
     background-color: #fff;
@@ -1125,7 +1125,7 @@
     margin-top: 2px;
     float: right;
     width: 90px;
-  
+
     padding: 5px;
     color: #eeeeee;
     font-weight: bold;
@@ -1148,7 +1148,7 @@
     background-color: #ff9a3c;
     border-radius: 4px;
   }
-  
+
   .profile-image {
     position: absolute;
     margin-top: -10px;
@@ -1175,7 +1175,7 @@
     background-color: #ff9a3c;
     border-radius: 4px;
   }
-  
+
   .list-appointment p {
     margin-top: -17px;
     margin-left: 17rem;
@@ -1183,16 +1183,16 @@
     font-weight: bolder;
     color: #ff9a3c;
   }
-  
+
   .list-content {
     padding: 10px;
     margin-bottom: 10px;
   }
-  
+
   .report-main-content {
     margin-top: 2rem;
     margin-left: 13rem;
-  
+
     width: 50rem;
   }
   .report-main-content p {
@@ -1221,7 +1221,7 @@
     padding: 10px;
     margin-bottom: 10px;
   }
-  
+
   .service-main {
     position: absolute;
     width: 68rem;
@@ -1264,27 +1264,27 @@
     border-collapse: collapse;
     margin-top: -1rem;
   }
-  
+
   .appointment-card table th,
   .appointment-card table td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
   }
-  
+
   .appointment-card table th {
     background-color: #f2f2f2;
     font-weight: bold;
   }
-  
+
   .appointment-card table tr:nth-child(even) {
     background-color: #f9f9f9;
   }
-  
+
   .appointment-card table tr:hover {
     background-color: #e9e9e9;
   }
-  
+
   .appointment-card table td:first-child {
     font-weight: bold;
     width: 150px;
@@ -1309,7 +1309,7 @@
     align-items: center;
     border-radius: 10px;
   }
-  
+
   .Service-Details h5 {
     background-color: #ff9a3c;
     padding: 10px;
@@ -1334,18 +1334,18 @@
     padding: 10px;
     margin: 10px 0;
   }
-  
+
   .pet-information-card table {
     margin-top: -25px;
     width: 100%;
     border-collapse: collapse;
   }
-  
+
   .pet-information-card td {
     padding: 8px;
     border-bottom: 1px solid #eee;
   }
-  
+
   .pet-information-card strong {
     display: inline-block;
     width: 100px;
@@ -1354,18 +1354,18 @@
     padding: 10px;
     margin: 10px 0;
   }
-  
+
   .appointment-Details-card table {
     margin-top: -25px;
     width: 100%;
     border-collapse: collapse;
   }
-  
+
   .appointment-Details-card td {
     padding: 8px;
     border-bottom: 1px solid #eee;
   }
-  
+
   .appointment-Details-card strong {
     display: inline-block;
     width: 150px;
@@ -1374,18 +1374,18 @@
     padding: 10px;
     margin: 10px 0;
   }
-  
+
   .Service-Details-cards table {
     margin-top: -25px;
     width: 100%;
     border-collapse: collapse;
   }
-  
+
   .Service-Details-cards td {
     padding: 8px;
     border-bottom: 1px solid #eee;
   }
-  
+
   .Service-Details-cards strong {
     display: inline-block;
     width: 150px;
@@ -1450,16 +1450,16 @@
     width: 40rem;
     margin-left: 11rem;
     padding: 50px;
-   
   }
-  .report-card{
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    padding: 30px;
-    margin:10px;
-    width: 38rem;
+  .report-card {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 15px;
+    margin: 10px;
+    width: 34rem;
     border-radius: 10px;
   }
-  .report-card h3{
+  .report-card h3 {
     color: #ff9a3c;
   }
   .pet-report-info-main h5 {
@@ -1537,257 +1537,288 @@
     padding: 10px;
     margin: 10px 0;
   }
-  
+
   .pet-report-info-cards {
-    width: 100%; 
-    max-width: 1000px; 
-    margin: 16px auto; 
-    border: 1px solid #ddd; 
+    width: 100%;
+    max-width: 1000px;
+    margin: 16px auto;
+    border: 1px solid #ddd;
     border-radius: 4px;
   }
-  
+
   .pet-report-info-cards table {
     width: 100%;
     border-collapse: collapse;
   }
-  
+
   .pet-report-info-cards td {
     padding: 10px 16px;
   }
-  
+
   .pet-report-info-cards td:first-child {
     font-weight: bold;
     text-align: left;
     color: orange;
-    width: 30%; 
+    width: 30%;
   }
-  
+
   .pet-report-info-cards td:last-child {
     text-align: left;
-    color: #333; 
+    color: #333;
   }
-  
+
   .pet-report-info-cards tr {
-    border-bottom: 1px solid #ddd; 
+    border-bottom: 1px solid #ddd;
   }
-  
+
   .pet-report-info-cards tr:last-child {
-    border-bottom: none; /
+    border-bottom: none;
   }
   .pet-report-owner-cards {
-    width: 100%; 
-    max-width: 1000px; 
-    margin: 16px auto; 
-    border: 1px solid #ddd; 
+    width: 100%;
+    max-width: 1000px;
+    margin: 16px auto;
+    border: 1px solid #ddd;
     border-radius: 4px;
   }
-  
+
   .pet-report-owner-cards table {
     width: 100%;
     border-collapse: collapse;
   }
-  
+
   .pet-report-owner-cards td {
     padding: 10px 16px;
   }
-  
+
   .pet-report-owner-cards td:first-child {
     font-weight: bold;
     text-align: left;
     color: orange;
-    width: 30%; 
+    width: 30%;
   }
-  
+
   .pet-report-owner-cards td:last-child {
     text-align: left;
-    color: #333; 
+    color: #333;
   }
-  
+
   .pet-report-owner-cards tr {
-    border-bottom: 1px solid #ddd; 
+    border-bottom: 1px solid #ddd;
   }
-  
+
   .pet-report-owner-cards tr:last-child {
-    border-bottom: none; /
+    border-bottom: none;
   }
   .pet-report-veteri-cards {
-    width: 100%; 
-    max-width: 1000px; 
-    margin: 16px auto; 
-    border: 1px solid #ddd; 
+    width: 100%;
+    max-width: 1000px;
+    margin: 16px auto;
+    border: 1px solid #ddd;
     border-radius: 4px;
   }
-  
+
   .pet-report-veteri-cards table {
     width: 100%;
     border-collapse: collapse;
   }
-  
+
   .pet-report-veteri-cards td {
     padding: 10px 16px;
   }
-  
+
   .pet-report-veteri-cards td:first-child {
     font-weight: bold;
     text-align: left;
     color: orange;
-    width: 30%; 
+    width: 30%;
   }
-  
+
   .pet-report-veteri-cards td:last-child {
     text-align: left;
-    color: #333; 
+    color: #333;
   }
-  
+
   .pet-report-veteri-cards tr {
-    border-bottom: 1px solid #ddd; 
+    border-bottom: 1px solid #ddd;
   }
-  
+
   .pet-report-veteri-cards tr:last-child {
-    border-bottom: none; /
+    border-bottom: none;
   }
   .pet-report-parasites-cards {
-    width: 100%; 
-    max-width: 1000px; 
-    margin: 16px auto; 
-    border: 1px solid #ddd; 
+    width: 100%;
+    max-width: 1000px;
+    margin: 16px auto;
+    border: 1px solid #ddd;
     border-radius: 4px;
   }
-  
+
   .pet-report-parasites-cards table {
     width: 100%;
     border-collapse: collapse;
   }
-  
+
   .pet-report-parasites-cards td {
     padding: 10px 16px;
   }
-  
+
   .pet-report-parasites-cards td:first-child {
     font-weight: bold;
     text-align: left;
     color: orange;
-    width: 30%; 
+    width: 30%;
   }
-  
+
   .pet-report-parasites-cards td:last-child {
     text-align: left;
-    color: #333; 
+    color: #333;
   }
-  
+
   .pet-report-parasites-cards tr {
-    border-bottom: 1px solid #ddd; 
+    border-bottom: 1px solid #ddd;
   }
-  
+
   .pet-report-parasites-cards tr:last-child {
-    border-bottom: none; 
+    border-bottom: none;
   }
   .pet-report-rabies-cards {
-    width: 100%; 
-    max-width: 1000px; 
-    margin: 16px auto; 
-    border: 1px solid #ddd; 
+    width: 100%;
+    max-width: 1000px;
+    margin: 16px auto;
+    border: 1px solid #ddd;
     border-radius: 4px;
   }
-  
+
   .pet-report-rabies-cards table {
     width: 100%;
     border-collapse: collapse;
   }
-  
+
   .pet-report-rabies-cards td {
     padding: 10px 16px;
   }
-  
+
   .pet-report-rabies-cards td:first-child {
     font-weight: bold;
     text-align: left;
     color: orange;
-    width: 30%; 
+    width: 30%;
   }
-  
+
   .pet-report-rabies-cards td:last-child {
     text-align: left;
-    color: #333; 
+    color: #333;
   }
-  
+
   .pet-report-rabies-cards tr {
-    border-bottom: 1px solid #ddd; 
+    border-bottom: 1px solid #ddd;
   }
-  
+
   .pet-report-rabies-cards tr:last-child {
-    border-bottom: none; 
+    border-bottom: none;
   }
   .pet-report-multivac-cards {
-    width: 100%; 
-    max-width: 1000px; 
-    margin: 16px auto; 
-    border: 1px solid #ddd; 
+    width: 100%;
+    max-width: 1000px;
+    margin: 16px auto;
+    border: 1px solid #ddd;
     border-radius: 4px;
   }
-  
+
   .pet-report-multivac-cards table {
     width: 100%;
     border-collapse: collapse;
   }
-  
+
   .pet-report-multivac-cards td {
     padding: 10px 16px;
   }
-  
+
   .pet-report-multivac-cards td:first-child {
     font-weight: bold;
     text-align: left;
     color: orange;
-    width: 30%; 
+    width: 30%;
   }
-  
+
   .pet-report-multivac-cards td:last-child {
     text-align: left;
-    color: #333; 
+    color: #333;
   }
-  
+
   .pet-report-multivac-cards tr {
-    border-bottom: 1px solid #ddd; 
+    border-bottom: 1px solid #ddd;
   }
-  
+
   .pet-report-multivac-cards tr:last-child {
-    border-bottom: none; 
+    border-bottom: none;
   }
   .pet-report-service-cards {
-    width: 100%; 
-    max-width: 1000px; 
-    margin: 16px auto; 
-    border: 1px solid #ddd; 
+    width: 100%;
+    max-width: 1000px;
+    margin: 16px auto;
+    border: 1px solid #ddd;
     border-radius: 4px;
   }
-  
+
   .pet-report-service-cards table {
     width: 100%;
     border-collapse: collapse;
   }
-  
+
   .pet-report-service-cards td {
     padding: 10px 16px;
   }
-  
+
   .pet-report-service-cards td:first-child {
     font-weight: bold;
     text-align: left;
     color: orange;
-    width: 30%; 
+    width: 30%;
   }
-  
+
   .pet-report-service-cards td:last-child {
     text-align: left;
-    color: #333; 
+    color: #333;
   }
-  
+
   .pet-report-service-cards tr {
-    border-bottom: 1px solid #ddd; 
+    border-bottom: 1px solid #ddd;
   }
-  
+
   .pet-report-service-cards tr:last-child {
-    border-bottom: none; 
+    border-bottom: none;
+  }
+  .folder {
+    max-height: 480px;
+    overflow-y: auto;
+    border: none;
+    margin: 1rem 0;
+    padding: 1rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 20px;
+  }
+  .folder::-webkit-scrollbar {
+    width: 8px;
+  }
+  .folder::-webkit-scrollbar-thumb {
+    background-color: #ff9a3c;
+    border-radius: 4px;
+  }
+
+  .folder-header {
+    cursor: pointer;
+    font-weight: bold;
+    color: #ff9a3c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .folder-content {
+    margin-top: 1rem;
+    padding-left: 1rem;
   }
 }

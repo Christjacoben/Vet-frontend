@@ -41,6 +41,7 @@ function Dashboard() {
   const [chatShow, setChatShow] = useState(false);
   const [petRecordShow, setPetRecordShow] = useState(false);
   const [petReportShow, setPetReportShow] = useState(false);
+  const [expandedFolders, setExpandedFolders] = useState({});
   const [formData, setFormData] = useState({});
   const profileImage = useSelector(
     (state) => state.profileImage.setProfileImage || defaultProfile
@@ -223,8 +224,28 @@ function Dashboard() {
     }));
   };
 
+  const groupReportsByEmail = (reports) => {
+    return reports.reduce((acc, report) => {
+      if (!acc[report.email]) {
+        acc[report.email] = [];
+      }
+      acc[report.email].push(report);
+      return acc;
+    }, {});
+  };
+
+  const toggleFolderExpand = (email) => {
+    setExpandedFolders((prev) => ({
+      ...prev,
+      [email]: !prev[email],
+    }));
+  };
+
   const renderAppointmentCards = () => {
-    return appointments.map((appointment) => {
+    const pendingAppointments = appointments.filter(
+      (appointment) => appointment.status === "Pending"
+    );
+    return pendingAppointments.map((appointment) => {
       const isExpanded = expandedAppointments[appointment.appointmentId];
       return (
         <div key={appointment.appointmentId} className="appointment-card">
@@ -389,7 +410,7 @@ function Dashboard() {
         return (
           <div key={appointment.appointmentId} className="appointment-card">
             <h3 onClick={() => toggleExpand(appointment.appointmentId)}>
-              Appointment finished from {appointment.email}
+              Appointment finished -{appointment.petType}
             </h3>
             {isExpanded && (
               <div>
@@ -465,7 +486,7 @@ function Dashboard() {
           <div key={appointment.appointmentId} className="appointment-card">
             <h3 onClick={() => toggleExpand(appointment.appointmentId)}>
               <p style={{ marginLeft: "8rem" }}>
-                Pet Record from {appointment.email}
+                Pet Record for {appointment.petType}
               </p>
             </h3>
             {isExpanded && (
@@ -1030,8 +1051,8 @@ function Dashboard() {
       });
   };
 
-  const renderPetReports = () => {
-    return petReports.map((report) => {
+  const renderPetReports = (reports) => {
+    return reports.map((report) => {
       const isExpanded = expandedAppointments[report.appointmentId];
       return (
         <div key={report.appointmentId} className="report-card">
@@ -1039,8 +1060,7 @@ function Dashboard() {
             style={{ marginLeft: "8rem" }}
             onClick={() => toggleExpand(report.appointmentId)}
           >
-            Pet Report for {report.petInfo.name} - Owner:{" "}
-            {report.ownerDetails.name}
+            Pet Report for {report.petInfo.petType}
           </h3>
           {isExpanded && (
             <div>
@@ -1327,6 +1347,32 @@ function Dashboard() {
     });
   };
 
+  const renderGroupedReports = () => {
+    const groupedReports = groupReportsByEmail(petReports);
+    return Object.keys(groupedReports).map((email) => {
+      const isExpanded = expandedFolders[email];
+      return (
+        <div key={email} className="folder">
+          <h3
+            onClick={() => toggleFolderExpand(email)}
+            className="folder-header"
+          >
+            Folder by: {email}
+          </h3>
+          {isExpanded && (
+            <div className="folder-content">
+              {groupedReports[email].map((report) => (
+                <div key={report.appointmentId} className="report">
+                  {renderPetReports([report])}
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      );
+    });
+  };
+
   const handleReportSave = async (appointment) => {
     const dataToSave = {
       appointmentId: appointment.appointmentId,
@@ -1597,7 +1643,7 @@ function Dashboard() {
           {appointmentRequestShow && (
             <div className="appointment-req">
               <div className="appointreq-child">
-                <p>Accepted Appointment</p>
+                <p>List of Appointments</p>
                 <div className="appointments-list">
                   {loading ? (
                     <p>Loading...</p>
@@ -1680,7 +1726,7 @@ function Dashboard() {
           {petReportShow && (
             <div className="reports-main-content">
               <p>Pet Reports</p>
-              <div className="reports-content">{renderPetReports()}</div>
+              <div className="reports-content">{renderGroupedReports()}</div>
             </div>
           )}
         </div>

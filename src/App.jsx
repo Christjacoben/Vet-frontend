@@ -10,6 +10,7 @@ import Forgot from "./component/Forgot";
 import { store } from "./store/store";
 import UserDashboard from "./component/UserDashboard";
 import LandingPage from "./component/LandingPage";
+//import Restriction from "./component/Restriction";
 import { SocketProvider } from "./SocketContext";
 
 function App() {
@@ -18,6 +19,9 @@ function App() {
       <SocketProvider>
         <Router>
           <Routes>
+            {/*
+            <Route exact path="/" element={<Restriction />} />
+           */}
             <Route exact path="/" element={<LandingPage />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />

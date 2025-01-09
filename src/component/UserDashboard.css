@@ -309,6 +309,38 @@
   font-weight: bold;
   width: 150px;
 }
+.custom-datepicker {
+  background-color: #f0f8ff; /* Light blue */
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.custom-calendar .react-datepicker__day--selected,
+.custom-calendar .react-datepicker__day--keyboard-selected {
+  background-color: #3e4a61; /* Custom dark blue */
+  color: white;
+}
+
+.custom-calendar .react-datepicker__day--highlighted {
+  background-color: #ffeb3b; /* Yellow for highlighted dates */
+  color: black;
+}
+.disabled-date {
+  background-color: red !important;
+  color: white !important;
+  border-radius: 50%;
+}
+.booked-date {
+  background-color: red !important;
+  color: white !important;
+}
+
+.booked-time {
+  background-color: red !important;
+  color: white !important;
+}
+
 @media only screen and (min-width: 1200px) {
   .user-main {
     position: absolute;

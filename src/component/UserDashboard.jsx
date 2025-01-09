@@ -14,6 +14,8 @@ import { useParams } from "react-router-dom";
 import { RiCloseCircleFill } from "react-icons/ri";
 import Chat from "./Chat";
 import UserService from "./UserService";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 function UserDashboard() {
   const { userId } = useParams();
@@ -26,6 +28,7 @@ function UserDashboard() {
   const [expandedAppointments, setExpandedAppointments] = useState({});
   const [selectedAppointmentId, setSelectedAppointmentId] = useState(null);
   const [userChatClose, setUserChatClose] = useState(true);
+
   const [formData, setFormData] = useState({
     name: "",
     address: "",
@@ -33,19 +36,36 @@ function UserDashboard() {
     contactNumber: "",
     petType: "select",
     breed: "",
-    appointmentDate: "",
+    appointmentDateTime: new Date(),
     service: "select",
   });
-
   const appointments = useSelector((state) => state.appointments.appointments);
   const loading = useSelector((state) => state.appointments.loading);
   const error = useSelector((state) => state.appointments.error);
 
+  const [bookedSlots, setBookedSlots] = useState([]);
   useEffect(() => {
     dispatch(fetchAppointment())
       .unwrap()
       .then((data) => {
         console.log("Fetch Appointment", data);
+      })
+      .catch((err) => {
+        console.error("Failed to fetch appointment", err);
+      });
+  }, [dispatch]);
+
+  useEffect(() => {
+    dispatch(fetchAppointment())
+      .unwrap()
+      .then((data) => {
+        const bookedDates = data.map((appointment) => {
+          const utcDate = new Date(appointment.appointmentDateTime);
+          return new Date(
+            utcDate.toLocaleString("en-US", { timeZone: "Asia/Manila" })
+          );
+        });
+        setBookedSlots(bookedDates);
       })
       .catch((err) => {
         console.error("Failed to fetch appointment", err);
@@ -86,7 +106,7 @@ function UserDashboard() {
       contactNumber: "",
       petType: "select",
       breed: "",
-      appointmentDate: "",
+      appointmentDateTime: new Date(),
       service: "select",
     });
   };
@@ -111,7 +131,13 @@ function UserDashboard() {
           });
           resetForm();
         } else {
-          toast.error("Failed to submit appointment");
+          toast.error(
+            "Maximum appointments reached for the day try again tomorrow",
+            {
+              autoClose: 4000,
+              position: "top-center",
+            }
+          );
         }
       })
       .catch((error) => {
@@ -190,8 +216,8 @@ function UserDashboard() {
                     </td>
                     <td>
                       {new Date(
-                        appointment.appointmentDate
-                      ).toLocaleDateString()}
+                        appointment.appointmentDateTime
+                      ).toLocaleString()}
                     </td>
                   </tr>
                   <tr>
@@ -242,6 +268,47 @@ function UserDashboard() {
       ...prev,
       [appoinmentId]: !prev[appoinmentId],
     }));
+  };
+
+  const handleDateChange = (date) => {
+    if (date instanceof Date) {
+      const isDuplicate = bookedSlots.some(
+        (bookedDate) =>
+          bookedDate.toDateString() === date.toDateString() &&
+          bookedDate.getHours() === date.getHours() &&
+          bookedDate.getMinutes() === date.getMinutes()
+      );
+
+      if (isDuplicate) {
+        toast.error(
+          "This time is already booked. Please select a different time.",
+          {
+            autoClose: 2000,
+            position: "top-center",
+          }
+        );
+      } else {
+        setFormData({ ...formData, appointmentDateTime: date });
+      }
+    } else {
+      console.error("Invalid date selected");
+    }
+  };
+
+  const isDateBooked = (date) => {
+    return bookedSlots.some(
+      (bookedDate) => bookedDate.toDateString() === date.toDateString()
+    );
+  };
+
+  const isTimeBooked = (time) => {
+    return bookedSlots.some(
+      (bookedDate) =>
+        bookedDate.toDateString() ===
+          formData.appointmentDateTime.toDateString() &&
+        bookedDate.getHours() === time.getHours() &&
+        bookedDate.getMinutes() === time.getMinutes()
+    );
   };
 
   return (
@@ -358,15 +425,26 @@ function UserDashboard() {
               />
             </div>
             <div className="items">
-              <label htmlFor="appointmentDate">Select Date</label>
-              <input
-                type="date"
-                id="appointmentDate"
-                name="appointmentDate"
-                value={formData.appointmentDate}
-                onChange={handleInputChange}
+              <label htmlFor="appointmentDate">Select Date/Time</label>
+              <DatePicker
+                selected={formData.appointmentDateTime}
+                onChange={handleDateChange}
+                showTimeSelect
+                timeIntervals={15}
+                dateFormat="MMMM d, yyyy h:mm aa"
+                timeCaption="Time (PHT)"
+                className="custom-datepicker"
+                calendarClassName="custom-calendar"
+                timeZone="Asia/Manila"
+                dayClassName={(date) =>
+                  isDateBooked(date) ? "booked-date" : undefined
+                }
+                timeClassName={(time) =>
+                  isTimeBooked(time) ? "booked-time" : undefined
+                }
               />
             </div>
+
             <div className="items">
               <label htmlFor="serviceOffered">Service Offered</label>
               <select
