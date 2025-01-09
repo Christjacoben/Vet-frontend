@@ -22,11 +22,12 @@ function Login() {
     e.preventDefault();
     fetch("https://vet-backend-fmx9.onrender.com/api/login", {
       method: "POST",
+        credentials: "include",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(formData),
-      credentials: "include",
+    
     })
       .then((response) => response.json())
       .then((data) => {
