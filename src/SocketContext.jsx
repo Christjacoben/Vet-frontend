@@ -1,7 +1,7 @@
 import React, { createContext, useEffect } from "react";
 import { io } from "socket.io-client";
 
-const socket = io("https://vet-backend-zi39.onrender.com", {
+const socket = io("https://vet-backend-fmx9.onrender.com", {
   withCredentials: true,
   autoConnect: false,
 });
