@@ -4,7 +4,7 @@ export const fetchPetReports = createAsyncThunk(
   "petReport/fetchPetReports",
   async () => {
     const response = await fetch(
-      "https://vet-backend-zi39.onrender.com/api/pet-reports",
+      "const token = sessionStorage.getItem('token');/api/pet-reports",
       {
         method: "GET",
         credentials: "include",
