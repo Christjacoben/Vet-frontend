@@ -6,8 +6,8 @@ export const fetchMessages = createAsyncThunk(
   async (appointmentId, { rejectWithValue }) => {
     try {
       const response = await axios.get(
-        `https://vet-backend-zi39.onrender.com/api/messages/${appointmentId}`,
-        { withCredentials: true }
+        `https://vet-backend-m3o7.onrender.com/api/messages/${appointmentId}`,
+        { withCredentials: true },
       );
       return response.data;
     } catch (error) {
