@@ -5,7 +5,7 @@ export const fetchAppointment = createAsyncThunk(
   async () => {
      const token = sessionStorage.getItem("token");
     const response = await fetch(
-      "http://localhost:5000/api/appointments",
+      "https://vet-backend-m3o7.onrender.com/api/appointments",
       {
         method: "GET",
         credentials: "include",
