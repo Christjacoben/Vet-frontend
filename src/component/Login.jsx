@@ -20,7 +20,7 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("https://vet-backend-fmx9.onrender.com/api/login", {
+    fetch("http://localhost:5000/api/login", {
       method: "POST",
         credentials: "include",
       headers: {
