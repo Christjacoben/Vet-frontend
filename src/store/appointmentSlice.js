@@ -4,7 +4,7 @@ export const fetchAppointment = createAsyncThunk(
   "appointments/fetchAppointments",
   async () => {
     const response = await fetch(
-      "https://vet-backend-zi39.onrender.com/api/appointments",
+      "https://vet-backend-fmx9.onrender.com/api/appointments",
       {
         method: "GET",
         credentials: "include",
