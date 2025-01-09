@@ -152,7 +152,7 @@ function Dashboard() {
   };
 
   const handleLogout = () => {
-    fetch("http://localhost:5000/api/logout", {
+    fetch("https://vet-backend-zi39.onrender.com/api/logout", {
       method: "POST",
       credentials: "include",
     })
@@ -176,14 +176,17 @@ function Dashboard() {
   const handleAppointmentAction = (appointment, action) => {
     const { appointmentId } = appointment;
 
-    fetch(`http://localhost:5000/api/appointment/${appointmentId}`, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ status: action }),
-      credentials: "include",
-    })
+    fetch(
+      `https://vet-backend-zi39.onrender.com/api/appointment/${appointmentId}`,
+      {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ status: action }),
+        credentials: "include",
+      }
+    )
       .then((response) => {
         if (response.ok) {
           console.log(`${action} appointment with ID ${appointmentId}`);
@@ -1453,7 +1456,7 @@ function Dashboard() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/pet-reports/${appointment.appointmentId}`,
+        `https://vet-backend-zi39.onrender.com/api/pet-reports/${appointment.appointmentId}`,
         {
           method: "POST",
           headers: {

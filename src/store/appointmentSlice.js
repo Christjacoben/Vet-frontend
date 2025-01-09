@@ -3,10 +3,13 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 export const fetchAppointment = createAsyncThunk(
   "appointments/fetchAppointments",
   async () => {
-    const response = await fetch("http://localhost:5000/api/appointments", {
-      method: "GET",
-      credentials: "include",
-    });
+    const response = await fetch(
+      "https://vet-backend-zi39.onrender.com/api/appointments",
+      {
+        method: "GET",
+        credentials: "include",
+      }
+    );
 
     const data = await response.json();
     return data;

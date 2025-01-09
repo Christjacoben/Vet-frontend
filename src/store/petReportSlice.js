@@ -3,10 +3,13 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 export const fetchPetReports = createAsyncThunk(
   "petReport/fetchPetReports",
   async () => {
-    const response = await fetch("http://localhost:5000/api/pet-reports", {
-      method: "GET",
-      credentials: "include",
-    });
+    const response = await fetch(
+      "https://vet-backend-zi39.onrender.com/api/pet-reports",
+      {
+        method: "GET",
+        credentials: "include",
+      }
+    );
 
     if (!response.ok) {
       throw new Error("Failed to fetch pet reports");

@@ -55,14 +55,17 @@ function Chat({ appointmentId, onmessageSend }) {
       console.log("Sending message:", newMessage);
 
       try {
-        const response = await fetch("http://localhost:5000/api/messages", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(newMessage),
-          credentials: "include",
-        });
+        const response = await fetch(
+          "https://vet-backend-zi39.onrender.com/api/messages",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(newMessage),
+            credentials: "include",
+          }
+        );
 
         if (response.ok) {
           const savedMessage = await response.json();
