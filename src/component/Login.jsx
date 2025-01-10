@@ -20,6 +20,7 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+     setLoading(true);
     fetch("https://vet-backend-m3o7.onrender.com/api/login", {
       method: "POST",
         credentials: "include",
