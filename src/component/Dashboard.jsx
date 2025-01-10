@@ -152,7 +152,7 @@ function Dashboard() {
   };
 
   const handleLogout = () => {
-    fetch("https://vet-backend-zi39.onrender.com/api/logout", {
+    fetch("https://vet-backend-m3o7.onrender.com/api/logout", {
       method: "POST",
       credentials: "include",
     })
@@ -177,7 +177,7 @@ function Dashboard() {
     const { appointmentId } = appointment;
 
     fetch(
-      `https://vet-backend-zi39.onrender.com/api/appointment/${appointmentId}`,
+      `https://vet-backend-m3o7.onrender.com/api/appointment/${appointmentId}`,
       {
         method: "PUT",
         headers: {
@@ -1456,7 +1456,7 @@ function Dashboard() {
 
     try {
       const response = await fetch(
-        `https://vet-backend-zi39.onrender.com/api/pet-reports/${appointment.appointmentId}`,
+        `https://vet-backend-m3o7.onrender.com/api/pet-reports/${appointment.appointmentId}`,
         {
           method: "POST",
           headers: {
