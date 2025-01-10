@@ -49,7 +49,7 @@ function Signup() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    fetch("https://vet-backend-zi39.onrender.com/api/signup", {
+    fetch("https://vet-backend-m3o7.onrender.com/api/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
