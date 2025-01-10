@@ -82,7 +82,7 @@ function UserDashboard() {
   };
 
   const handleLogoutUser = () => {
-    fetch("https://vet-backend-zi39.onrender.com/api/logout", {
+    fetch("https://vet-backend-m3o7.onrender.com/api/logout", {
       method: "POST",
       credentials: "include",
     })
@@ -114,7 +114,7 @@ function UserDashboard() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch("https://vet-backend-zi39.onrender.com/api/appointment", {
+    fetch("https://vet-backend-m3o7.onrender.com/api/appointment", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
