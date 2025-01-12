@@ -1,7 +1,7 @@
 {
   "name": "vet-system",
   "private": true,
-  "proxy": "https://vet-backend-m3o7.onrender.com"
+  "proxy": "https://vet-backend-m3o7.onrender.com",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
