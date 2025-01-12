@@ -3,15 +3,10 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 export const fetchPetReports = createAsyncThunk(
   "petReport/fetchPetReports",
   async () => {
-    const token = sessionStorage.getItem("authToken");
-    const response = await fetch(
-      "const token = sessionStorage.getItem('token');/api/pet-reports",
+    const response = await fetch("https://vet-backend-m3o7.onrender.com/api/pet-reports",
       {
         method: "GET",
-        credentials: "include",
-        headers: {
-        Authorization: `Bearer ${token}`,
-      },
+        credentials: "include"
       }
     );
 
