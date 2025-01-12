@@ -3,7 +3,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 export const fetchPetReports = createAsyncThunk(
   "petReport/fetchPetReports",
   async () => {
-    const token = sessionStorage.getItem("token");
+    const token = sessionStorage.getItem("authToken");
     const response = await fetch(
       "const token = sessionStorage.getItem('token');/api/pet-reports",
       {
