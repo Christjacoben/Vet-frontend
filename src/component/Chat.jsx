@@ -56,7 +56,7 @@ function Chat({ appointmentId, onmessageSend }) {
 
       try {
         const response = await fetch(
-          "https://vet-backend-zi39.onrender.com/api/messages",
+          "https://vet-backend-m3o7.onrender.com/api/messages",
           {
             method: "POST",
             headers: {
