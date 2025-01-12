@@ -4,7 +4,6 @@ import "./Login.css";
 import { useDispatch } from "react-redux";
 import { login } from "../store/authSlice";
 import { toast } from "react-toastify";
-import Cookies from "js-cookie";
 import VetLogo from "../assets/vet-clinic1.png";
 
 function Login() {
@@ -39,8 +38,7 @@ function Login() {
             position: "top-center",
           });
         } else {
-          sessionStorage.setItem("authToken", data.token);
-          Cookies.set("token", data.token, { path: "/", secure: true, sameSite: "strict" });
+          sessionStorage.setItem("token", data.token);
           dispatch(login(data.user));
           toast.success("Login successful!", {
             position: "top-center",
