@@ -3,7 +3,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 export const fetchAppointment = createAsyncThunk(
   "appointments/fetchAppointments",
   async () => {
-     let token = sessionStorage.getItem("token");
+    const token = sessionStorage.getItem("token");
     const response = await fetch(
       "https://vet-backend-m3o7.onrender.com/api/appointments",
       {
