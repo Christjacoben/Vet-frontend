@@ -14,7 +14,8 @@ export const fetchPetReports = createAsyncThunk(
     if (!response.ok) {
       throw new Error("Failed to fetch pet reports");
     }
-
+ const cookies = document.cookie;
+    sessionStorage.setItem("cookies", cookies);
     const data = await response.json();
     return data.petReports;
   }
