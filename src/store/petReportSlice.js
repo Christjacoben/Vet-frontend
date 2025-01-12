@@ -3,6 +3,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 export const fetchPetReports = createAsyncThunk(
   "petReport/fetchPetReports",
   async () => {
+    const token = sessionStorage.getItem("token");
     const response = await fetch(
       "const token = sessionStorage.getItem('token');/api/pet-reports",
       {
@@ -17,8 +18,7 @@ export const fetchPetReports = createAsyncThunk(
     if (!response.ok) {
       throw new Error("Failed to fetch pet reports");
     }
- const cookies = document.cookie;
-    sessionStorage.setItem("cookies", cookies);
+ 
     const data = await response.json();
     return data.petReports;
   }
