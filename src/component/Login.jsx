@@ -4,6 +4,7 @@ import "./Login.css";
 import { useDispatch } from "react-redux";
 import { login } from "../store/authSlice";
 import { toast } from "react-toastify";
+import Cookies from "js-cookie";
 import VetLogo from "../assets/vet-clinic1.png";
 
 function Login() {
@@ -23,7 +24,7 @@ function Login() {
      setLoading(true);
     fetch("https://vet-backend-m3o7.onrender.com/api/login", {
       method: "POST",
-        credentials: "include",
+      credentials: "include",
       headers: {
         "Content-Type": "application/json",
       },
@@ -38,7 +39,11 @@ function Login() {
             position: "top-center",
           });
         } else {
-          sessionStorage.setItem("token", data.token);
+         Cookies.set("token", data.token, {
+            expires: 7, 
+            secure: true, 
+            sameSite: "Strict",
+          });
           dispatch(login(data.user));
           toast.success("Login successful!", {
             position: "top-center",
