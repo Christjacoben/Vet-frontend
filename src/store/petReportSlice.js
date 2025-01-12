@@ -8,6 +8,9 @@ export const fetchPetReports = createAsyncThunk(
       {
         method: "GET",
         credentials: "include",
+        headers: {
+        Authorization: `Bearer ${token}`,
+      },
       }
     );
 
