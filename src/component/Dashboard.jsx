@@ -1391,7 +1391,7 @@ function Dashboard() {
       },
       ownerDetails: {
         name: appointment.name,
-        appointmentDate: new Date(appointment.appointmentDate).toISOString(),
+        appointmentDate: new Date(appointment.appointmentDateTime).toISOString(),
         address: appointment.address,
         contactNumber: appointment.contactNumber,
       },
