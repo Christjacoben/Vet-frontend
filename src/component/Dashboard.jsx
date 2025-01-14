@@ -277,7 +277,7 @@ function Dashboard() {
                     </td>
                     <td>
                       {new Date(
-                        appointment.appointmentDate
+                        appointment.appointmentDateTime
                       ).toLocaleDateString()}
                     </td>
                   </tr>
@@ -357,7 +357,7 @@ function Dashboard() {
                       </td>
                       <td>
                         {new Date(
-                          appointment.appointmentDate
+                          appointment.appointmentDateTime
                         ).toLocaleDateString()}
                       </td>
                     </tr>
@@ -443,7 +443,7 @@ function Dashboard() {
                       </td>
                       <td>
                         {new Date(
-                          appointment.appointmentDate
+                          appointment.appointmentDateTime
                         ).toLocaleDateString()}
                       </td>
                     </tr>
@@ -598,7 +598,7 @@ function Dashboard() {
                           </td>
                           <td>
                             {new Date(
-                              appointment.appointmentDate
+                              appointment.appointmentDateTime
                             ).toLocaleDateString()}
                           </td>
                         </tr>
@@ -1127,7 +1127,7 @@ function Dashboard() {
                         </td>
                         <td>
                           {new Date(
-                            report.ownerDetails.appointmentDate
+                            report.ownerDetails.appointmentDateTime
                           ).toLocaleDateString()}
                         </td>
                       </tr>
