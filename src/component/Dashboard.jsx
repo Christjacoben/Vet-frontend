@@ -1055,6 +1055,62 @@ function Dashboard() {
   };
 
   const renderPetReports = (reports) => {
+      const handlePrint = (appointmentId) => {
+      const elementToPrint = document.getElementById(`report-${appointmentId}`);
+      const printWindow = window.open("", "PRINT", "height=600,width=1000");
+
+      const printStyles = `
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: #333;
+          }
+          h5 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            text-decoration: underline;
+          }
+          table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+          }
+          table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+          }
+          table th {
+            background-color: #f2f2f2;
+          }
+          .pet-report-info-main, 
+          .pet-report-owner-main,
+          .pet-report-veteri-main,
+          .pet-report-parasites-main,
+          .pet-report-rabies-main,
+          .pet-report-multivac-main,
+          .pet-report-service-main {
+            margin-bottom: 20px;
+          }
+          @media print {
+          .print-button {
+          display: none;
+        }
+      }
+        </style>
+      `;
+
+      printWindow.document.write(
+        `<html><head><title>Pet Report</title>${printStyles}</head><body>`
+      );
+      printWindow.document.write(elementToPrint.innerHTML);
+      printWindow.document.write("</body></html>");
+      printWindow.document.close();
+      printWindow.focus();
+      printWindow.print();
+      printWindow.close();
+    };
     return reports.map((report) => {
       const isExpanded = expandedAppointments[report.appointmentId];
       return (
@@ -1343,6 +1399,12 @@ function Dashboard() {
                   </table>
                 </div>
               </div>
+                <button
+                className="print-button"
+                onClick={() => handlePrint(report.appointmentId)}
+              >
+                Print Report
+              </button>
             </div>
           )}
         </div>
