@@ -1055,7 +1055,7 @@ function Dashboard() {
   };
 
   const renderPetReports = (reports) => {
-      const handlePrint = (appointmentId) => {
+    const handlePrint = (appointmentId) => {
       const elementToPrint = document.getElementById(`report-${appointmentId}`);
       const printWindow = window.open("", "PRINT", "height=600,width=1000");
 
@@ -1111,6 +1111,7 @@ function Dashboard() {
       printWindow.print();
       printWindow.close();
     };
+
     return reports.map((report) => {
       const isExpanded = expandedAppointments[report.appointmentId];
       return (
@@ -1121,8 +1122,9 @@ function Dashboard() {
           >
             Pet Report for {report.petInfo.petType}
           </h3>
+
           {isExpanded && (
-            <div>
+            <div id={`report-${report.appointmentId}`}>
               <div className="pet-report-info-main">
                 <h5>Pet Information</h5>
                 <div className="pet-report-info-cards">
@@ -1183,7 +1185,7 @@ function Dashboard() {
                         </td>
                         <td>
                           {new Date(
-                            report.ownerDetails.appointmentDateTime
+                            report.ownerDetails.appointmentDate
                           ).toLocaleDateString()}
                         </td>
                       </tr>
@@ -1399,7 +1401,7 @@ function Dashboard() {
                   </table>
                 </div>
               </div>
-                <button
+              <button
                 className="print-button"
                 onClick={() => handlePrint(report.appointmentId)}
               >
