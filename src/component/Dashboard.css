@@ -1821,4 +1821,13 @@
     margin-top: 1rem;
     padding-left: 1rem;
   }
+  .print-button {
+    margin-top: -10px;
+    margin-left: 27rem;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ff9a3c;
+  }
 }
